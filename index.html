@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <title>Hello, AMPs</title>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -18,8 +19,30 @@
       }
     </script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      header {
+        height: 200px;
+        background-color: #f0f0f0;
+      }
+      amp-sidebar {
+        width: 170vh;
+      }
+      p {
+        word-wrap: break-word;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to the mobile web</h1>
+    <header>
+      <h1>...</h1>
+      <button class='hamburger' on='tap:sidebar1.toggle'></button>
+    </header>
+    <amp-sidebar id='sidebar1' layout='nodisplay' side='right'>
+      <ul>
+        <li on='tap:sidebar1.toggle' tabindex='0' role='toggle'> Close</li>
+      </ul>
+    </amp-sidebar>
+    <p>a;iwef;ojaiw;ioefj;oawejf;iaw;eojf;iaowef;ja;woiefj;aowjef;oajwe;oifja;wejf;oawjef;oajwe;fja;owejf;oaijwef;ijaw;efij;aowejf;awje;fjaw;ioefj;aowiejf;aijwe;foijaw;oeifja;oiwejf;aiwjef;oaijwef;oijaw;oiefj;awijef;oaijwe;foijaw;oijef;aowiejf;aoiwjef;aijwef;ijaw;efija;wjef;oawjef;oiajwe;fojaw;oiegh;aweihg;oawiehg;iawhg;oiahweg;oiha;iwehga;oewrhlfiuhseriulhgseihgs4hg89ehgilusheguzh;iguha;uierhg;ng;uhfdgnsrhnhusbwhpuirebvpiwuehrgbpiuvherbpuivqheprbguhapiruhgvbpiuehrbgpiauvehgbpiuqhrebgpivushebrpgiuhbepuihgbvpuhrebgvpuqhrebgvpuiqhrebgpuivqhbrepughvqpiuerhgvbpiuerhbgpiuhrugerhgapiurhbgpiuavhrebgpuvaishrvbgpiuhqvpberuihgbpsuierhgvbpiuaehrgbvpauebgpviuahergpiuvhebpguihqvpbrehgvbpuierhgvbaupehgbvpauiehrgbpuiavhrebgpivqherbpughqrpugvahnpebuihgvbpuieavbpuiahrevbgpuiaehbgvpuiehrbpguivsherbpugvbapuhgvbpuhreupghgpsuhrpuhsv[erhgv[srehtg[nsehrgvn[soeuhgn[uqhpushrgpvushrvgpiuhernguhsnpieurnvpsurnvgpuerhnvpsuhgn[vsudvhngpuhngpsuerhngpusvehrnvgushrengpuhenruhgspuehgusherougsheorghs;oehgohjerhg[wehrog[uhseu'orhgsher;oughse;rhg;soehrg;sherghseorhgnsuehrngvpushengvuisehrngvushengvpuihsernpguivhsnrepuginhvsepruhgnvpsueihnvgpsuengvpusingvusherghurhguehsguhperngvpuiserngvpuisernvgpuishneviuhsegnpuvirvn</p>
+    <p>aijw;eoijfa;oiwejf;oawije;ofja;woijef;oiajweiofja;weijf;oawje;ofja;oiwejf;oawijef;oajwe;foja;owejf;oiajwef;ojaw;ioejf;ioajwe;iofj;aowjefi;oajw;oiefjaoiefna;oiwjefpuhregpiusherpguhspierhgupsiehrpguvsherpugnhvspuerhgnvpsuegnpvuherpngvspeuirhgpuiserhpnghsepnhp59ghp97wuhrgfpiuahrpughspeurgusaherpghaeuir;hgui;aehr;ugiaheiu;hgiusehrg;iuahe;orhg;uaoehrg;oaher;ougha;ouerhg;oaher;gouahe;ourgha;uerhg;oauhwer;oughea;ogh;aehrg;uaehg'ouhae;iugha;eurhg;aeiuhguaiehg;uaoehr;guiaher;ugheas;ugh;seuhg;osehg;ousehr;ohg;soueg;osehr;goushe;ourhg;usoerhg;osher;uohgs;erhg'osehrg'ousehr'oghse'ohrg'osehr'oghes'orhg'oisehrg'oiesh'orghse'orihg'seoirhg'oseihg'oishe'ogisher'oughse'ourgs'oubg'oseg'oiserng'oisebrg'oisebr'ogiseh'rogihs'eorgj;snrvgjivsnjrgpoivsnherpognhspoeriunvpsouehrnvgoehr[oiehgioesh'iogh'w3ioahg'io3h4'ogihas'oierhg'oahrg'8ha'orhg'osehg'o3ahg'8h'gha'erhg'aiehr'gioshe'io5ghs'eorihgs'ehgsehgs8e[hg;soehr;gosiehr;ogisher;oghse;ohg;oseirhg;ioserhgseiroghs;eoirhgs;oerihg;oisehr;goihse;oihg;isoehg;siehr;goiesh;orgih;eosihg;iosehr;oghse;urgspnvrgsunpuengerh;ugsa;urhgs;oerhg;sieorh;goesihr;goieshr;oghes;rouihg;seorhg;eoshrgo'sehr;oghs;oerhg;oseihrg;oieshrg;ioeshr;iohgse;iorhg;iosehg;oieshrg;ioseh</p>
   </body>
 </html>
